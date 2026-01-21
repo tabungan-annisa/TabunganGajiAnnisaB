@@ -270,9 +270,10 @@ app.post("/api/kpi-by-user", async (req, res) => {
 // ========================= LOCAL DEV ONLY =========================
 if (process.env.NODE_ENV !== "production") {
   app.listen(PORT, () => {
-    console.log(`🚀 Server lokal berjalan di http://192.168.110.160:${PORT}`);
+    console.log(🚀 Server lokal berjalan di http://localhost:${PORT});
   });
 }
 
 // ========================= EXPORT FOR VERCEL =========================
 module.exports = app;
+
