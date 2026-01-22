@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL;
 
 // ========================= CORS =========================
-const FRONTEND_URL = "https://firdausus10-cmyk.github.io";
+const FRONTEND_URL = "https://tabungan-annisa.github.io";
 
 app.use(
   cors({
@@ -268,6 +268,7 @@ app.post("/api/kpi-by-user", async (req, res) => {
 
 
 // ========================= LOCAL DEV ONLY =========================
+// ========================= LOCAL DEV ONLY =========================
 if (process.env.NODE_ENV !== "production") {
   app.listen(PORT, () => {
     console.log(`🚀 Server lokal berjalan di http://localhost:${PORT}`);
@@ -277,5 +278,3 @@ if (process.env.NODE_ENV !== "production") {
 
 // ========================= EXPORT FOR VERCEL =========================
 module.exports = app;
-
-
