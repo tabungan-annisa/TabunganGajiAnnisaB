@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL;
 
 // ========================= CORS =========================
-const FRONTEND_URL = "https://tabungangajiannisab.vercel.app";
+const FRONTEND_URL = "https://tabungan-annisa.github.io";
 
 app.use(
   cors({
@@ -303,3 +303,4 @@ if (process.env.NODE_ENV !== "production") {
 
 // ========================= EXPORT FOR VERCEL =========================
 module.exports = app;
+
