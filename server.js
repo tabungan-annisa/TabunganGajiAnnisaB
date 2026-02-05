@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL;
 
 // ========================= CORS =========================
-const FRONTEND_URL = "http://192.168.110.160:3000";
+const FRONTEND_URL = "http://localhost:3000/TabunganGajiAnnisa";
 
 app.use(
   cors({
@@ -353,3 +353,4 @@ if (process.env.NODE_ENV !== "production") {
 
 // ========================= EXPORT FOR VERCEL =========================
 module.exports = app;
+
